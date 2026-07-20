@@ -1368,7 +1368,7 @@ button {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     padding: var(--space-md) var(--space-lg);
-    margin-top: var(--space-xl);
+    margin-top: var(--space-md);
 }
 
 .doctor__stat {
@@ -2155,7 +2155,7 @@ button {
         justify-content: center;
     }
 
-    .doctor__credentials {
+    .doctor__credentials-bar {
         flex-wrap: wrap;
         gap: var(--space-lg);
     }
