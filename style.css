@@ -2102,7 +2102,7 @@ button {
 }
 
 .footer__logo {
-    height: 54px;
+    height: 75px;
     width: auto;
     margin-bottom: var(--space-sm);
     filter: brightness(10);
