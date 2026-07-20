@@ -253,42 +253,6 @@ button {
     opacity: 0.85;
 }
 
-.header__logo-tagline {
-    font-family: var(--font-serif);
-    font-size: 0.85rem;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.75);
-    margin-left: 12px;
-    padding-left: 12px;
-    border-left: 1px solid rgba(255, 255, 255, 0.25);
-    white-space: nowrap;
-    transition: color var(--duration-normal) var(--ease-out), border-color var(--duration-normal) var(--ease-out), opacity var(--duration-fast) var(--ease-out);
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .header__logo-tagline {
-        display: block;
-    }
-}
-
-@media (min-width: 1024px) {
-    .header__logo-tagline {
-        font-size: 0.95rem;
-        margin-left: 16px;
-        padding-left: 16px;
-    }
-}
-
-.header--scrolled .header__logo-tagline {
-    color: rgba(26, 26, 26, 0.6);
-    border-left-color: rgba(26, 26, 26, 0.15);
-}
-
-.header__logo:hover .header__logo-tagline {
-    opacity: 0.85;
-}
-
 .header__nav {
     display: none;
     align-items: center;
