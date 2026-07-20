@@ -668,6 +668,40 @@ button {
     max-width: 540px;
 }
 
+.experience__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+.experience__phone-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--color-espresso);
+    transition: color var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+}
+
+.experience__phone-icon {
+    color: var(--color-gold);
+    transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.experience__phone-link:hover {
+    color: var(--color-gold);
+    transform: translateY(-1px);
+}
+
+.experience__phone-link:hover .experience__phone-icon {
+    transform: scale(1.1);
+}
+
 .experience__image-wrapper {
     position: relative;
     border-radius: var(--radius-lg);
@@ -1329,8 +1363,10 @@ button {
 }
 
 .gallery__header {
+    display: block;
+    width: fit-content;
+    margin: 0 auto var(--space-3xl);
     text-align: center;
-    margin-bottom: var(--space-3xl);
 }
 
 .gallery__heading {
@@ -1344,6 +1380,16 @@ button {
 .gallery__heading em {
     font-style: italic;
     color: var(--color-gold);
+}
+
+.gallery__description {
+    font-family: var(--font-sans);
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin: var(--space-md) auto 0;
+    width: 0;
+    min-width: 100%;
 }
 
 .gallery__grid {
@@ -1506,19 +1552,34 @@ button {
     background: var(--color-bg);
 }
 
+.testimonials__header {
+    display: block;
+    width: fit-content;
+    margin: 0 auto var(--space-3xl);
+    text-align: center;
+}
+
 .testimonials__heading {
     font-family: var(--font-serif);
     font-size: clamp(2.2rem, 4vw, 3.5rem);
     font-weight: 300;
     line-height: 1.06;
-    text-align: center;
     color: var(--color-charcoal);
-    margin-bottom: var(--space-3xl);
 }
 
 .testimonials__heading em {
     font-style: italic;
     color: var(--color-gold);
+}
+
+.testimonials__description {
+    font-family: var(--font-sans);
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: var(--color-text-light);
+    margin: var(--space-md) auto 0;
+    width: 0;
+    min-width: 100%;
 }
 
 .testimonials__carousel {
@@ -1599,14 +1660,19 @@ button {
     background: var(--color-bg-alt);
 }
 
+.community__header {
+    display: block;
+    width: fit-content;
+    margin: 0 auto var(--space-3xl);
+    text-align: center;
+}
+
 .community__heading {
     font-family: var(--font-serif);
     font-size: clamp(2.2rem, 4vw, 3.5rem);
     font-weight: 300;
     line-height: 1.06;
-    text-align: center;
     color: var(--color-charcoal);
-    margin-bottom: var(--space-md);
 }
 
 .community__heading em {
@@ -1616,12 +1682,12 @@ button {
 
 .community__intro {
     font-family: var(--font-sans);
-    text-align: center;
     font-size: 0.98rem;
     line-height: 1.8;
     color: var(--color-text-light);
-    max-width: 580px;
-    margin: 0 auto var(--space-3xl);
+    margin: var(--space-md) auto 0;
+    width: 0;
+    min-width: 100%;
 }
 
 .community__grid {
