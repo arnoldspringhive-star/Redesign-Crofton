@@ -550,7 +550,8 @@ button {
     position: absolute;
     inset: 0;
     z-index: 0;
-    transform: scale(1.02);
+    image-rendering: -webkit-optimize-contrast;
+    filter: contrast(1.02) sharpness(1.05);
 }
 
 .hero__overlay {
@@ -561,6 +562,61 @@ button {
             rgba(26, 23, 20, 0.45) 45%,
             rgba(26, 23, 20, 0.8) 100%);
     z-index: 2;
+}
+
+.hero__sound-toggle {
+    position: absolute;
+    bottom: 2.25rem;
+    right: 2.25rem;
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.25rem;
+    background: rgba(26, 26, 26, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: var(--radius-pill);
+    color: #ffffff;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-out);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.hero__sound-toggle:hover {
+    background: var(--color-gold);
+    border-color: var(--color-gold);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(197, 164, 109, 0.35);
+}
+
+.hero__sound-toggle.is-active {
+    background: rgba(197, 164, 109, 0.85);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.sound-icon {
+    flex-shrink: 0;
+    transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.hero__sound-toggle:hover .sound-icon {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .hero__sound-toggle {
+        bottom: 1.25rem;
+        right: 1.25rem;
+        padding: 0.5rem 0.9rem;
+        font-size: 0.72rem;
+    }
 }
 
 .hero__content {

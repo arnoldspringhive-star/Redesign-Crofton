@@ -185,10 +185,45 @@
     }
 
 
+    // ─── HERO VIDEO SOUND TOGGLE ────────────────────────
+    function initHeroAudio() {
+        const heroVideo = document.querySelector('.hero__bg-video');
+        const soundToggle = document.getElementById('hero-sound-toggle');
+        if (!heroVideo || !soundToggle) return;
+
+        const iconMuted = soundToggle.querySelector('.sound-icon--muted');
+        const iconUnmuted = soundToggle.querySelector('.sound-icon--unmuted');
+        const soundText = soundToggle.querySelector('.hero__sound-text');
+
+        function updateAudioState() {
+            if (heroVideo.muted) {
+                if (iconMuted) iconMuted.style.display = 'block';
+                if (iconUnmuted) iconUnmuted.style.display = 'none';
+                if (soundText) soundText.textContent = 'Enable Sound';
+                soundToggle.classList.remove('is-active');
+            } else {
+                if (iconMuted) iconMuted.style.display = 'none';
+                if (iconUnmuted) iconUnmuted.style.display = 'block';
+                if (soundText) soundText.textContent = 'Mute Sound';
+                soundToggle.classList.add('is-active');
+            }
+        }
+
+        soundToggle.addEventListener('click', () => {
+            heroVideo.muted = !heroVideo.muted;
+            if (!heroVideo.muted) {
+                heroVideo.play().catch(e => console.log('Autoplay audio play error:', e));
+            }
+            updateAudioState();
+        });
+    }
+
+
     // ─── INIT ON LOAD ──────────────────────────────────
     updateHeader();
     initSmileSliders();
     initBookingForm();
+    initHeroAudio();
 
     // Small delay for hero reveal elements to feel intentional
     window.addEventListener('load', () => {

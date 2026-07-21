@@ -17,3 +17,7 @@ $RECYCLE.BIN/
 *.njsproj
 *.sln
 *.sw?
+
+# Raw video source
+/May 17, 2024.mp4
+
