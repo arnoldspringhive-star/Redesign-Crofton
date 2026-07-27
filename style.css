@@ -136,6 +136,9 @@ button {
 
 
 /* ─── UTILITY ───────────────────────────────────────────── */
+.text-center {
+    text-align: center;
+}
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -2104,7 +2107,7 @@ button {
 
 @media (max-width: 768px) {
     .footer__grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: var(--space-xl) var(--space-lg);
     }
 }
@@ -2256,4 +2259,161 @@ select:focus-visible {
 .booking__form-input:focus-visible {
     outline: none;
     /* Handled by box-shadow in input style */
+}
+
+/* ─── PAGE HEADERS ──────────────────────────────────────── */
+
+.page-header {
+    padding: 6rem 0 3rem;
+    text-align: center;
+    background-color: var(--color-bg);
+}
+
+@media (min-width: 768px) {
+    .page-header {
+        padding: 8rem 0 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .page-header {
+        padding: 10rem 0 5rem;
+    }
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+    color: var(--color-charcoal);
+    margin: 1rem 0;
+}
+
+.page-title em {
+    font-style: italic;
+    color: var(--color-gold);
+}
+
+/* ─── RESTORED LAYOUTS ──────────────────────────────────── */
+
+/* Service Detail Blocks */
+.service-detail-block {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+@media (min-width: 992px) {
+    .service-detail-block {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        margin-bottom: 6rem;
+    }
+    .service-detail-block--reverse .service-detail-block__text {
+        order: 2;
+    }
+    .service-detail-block--reverse .service-detail-block__img {
+        order: 1;
+    }
+}
+.service-detail-block__img img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Patient Guide & Sidebar */
+.patient-guide {
+    padding: 3rem 0;
+}
+@media (min-width: 768px) {
+    .patient-guide {
+        padding: 4rem 0;
+    }
+}
+@media (min-width: 992px) {
+    .patient-guide {
+        padding: 5rem 0;
+    }
+}
+.patient-guide__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+@media (min-width: 992px) {
+    .patient-guide__grid {
+        grid-template-columns: 1fr 350px;
+        gap: 3rem;
+    }
+}
+.sidebar-box {
+    background-color: var(--color-bg-alt);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+.sidebar-box h3 {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+.sidebar-box--dark {
+    background-color: var(--color-charcoal);
+    color: var(--color-bg);
+}
+.sidebar-box--dark h3 {
+    color: var(--color-bg);
+}
+.sidebar-box p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* FAQ */
+.faq-container {
+    max-width: 800px;
+    margin: 4rem auto 0;
+}
+.faq-item {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 1.5rem 0;
+    font-family: var(--font-sans);
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.faq-question:hover {
+    color: var(--color-primary);
+}
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.faq-answer p {
+    padding-bottom: 1.5rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
 }

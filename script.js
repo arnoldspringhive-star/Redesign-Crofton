@@ -222,7 +222,7 @@
     // ─── INIT ON LOAD ──────────────────────────────────
     updateHeader();
     initSmileSliders();
-    initBookingForm();
+    // initBookingForm(); // Disabled to allow native FormSubmit.co submission
     initHeroAudio();
 
     // Small delay for hero reveal elements to feel intentional
