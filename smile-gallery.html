@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,9 +23,9 @@
         }
         .gallery-item {
             background: var(--color-white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
             transition: transform 0.3s ease;
         }
         .gallery-item:hover {
@@ -34,12 +34,15 @@
         .gallery-images {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 24px;
+            margin-bottom: 24px;
         }
         .gallery-img-wrap {
             position: relative;
-            padding-top: 60%; /* Aspect ratio */
+            padding-top: 100%; /* Square aspect ratio */
             background-color: var(--color-sand);
+            border-radius: 8px;
+            overflow: hidden;
         }
         .gallery-img-wrap img {
             position: absolute;
@@ -201,11 +204,11 @@
                         <div class="gallery-images">
                             <div class="gallery-img-wrap">
                                 <span class="gallery-img-label">Before</span>
-                                <img src="assets/sg_before_1.png" alt="Before" style="width: 100%; height: auto; border-radius: 8px;">
+                                <img src="assets/veneers_before.png" alt="Before" >
                             </div>
                             <div class="gallery-img-wrap">
                                 <span class="gallery-img-label">After</span>
-                                <img src="assets/sg_after_1.png" alt="After" style="width: 100%; height: auto; border-radius: 8px;">
+                                <img src="assets/veneers_after.png" alt="After" >
                             </div>
                         </div>
                         <div class="gallery-info">
@@ -219,15 +222,15 @@
                         <div class="gallery-images">
                             <div class="gallery-img-wrap">
                                 <span class="gallery-img-label">Before</span>
-                                <img src="assets/gallery_before_1.png" alt="Before" style="width: 100%; height: auto; border-radius: 8px;">
+                                <img src="assets/invisalign_before.png" alt="Before" >
                             </div>
                             <div class="gallery-img-wrap">
                                 <span class="gallery-img-label">After</span>
-                                <img src="assets/gallery_after_1.png" alt="After" style="width: 100%; height: auto; border-radius: 8px;">
+                                <img src="assets/invisalign_after.png" alt="After" >
                             </div>
                         </div>
                         <div class="gallery-info">
-                            <h3 class="gallery-title">InvisalignÂ® Clear Aligners</h3>
+                            <h3 class="gallery-title">Invisalign&reg; Clear Aligners</h3>
                             <p class="gallery-desc">Comprehensive orthodontic alignment achieved discreetly in just 14 months using clear aligner therapy.</p>
                         </div>
                     </div>
@@ -237,11 +240,11 @@
                         <div class="gallery-images">
                             <div class="gallery-img-wrap">
                                 <span class="gallery-img-label">Before</span>
-                                <img src="assets/gallery_before_2.png" alt="Before" style="width: 100%; height: auto; border-radius: 8px;">
+                                <img src="assets/implants_before.png" alt="Before" >
                             </div>
                             <div class="gallery-img-wrap">
                                 <span class="gallery-img-label">After</span>
-                                <img src="assets/gallery_after_2.png" alt="After" style="width: 100%; height: auto; border-radius: 8px;">
+                                <img src="assets/implants_after.png" alt="After" >
                             </div>
                         </div>
                         <div class="gallery-info">
@@ -312,6 +315,9 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
 
 
 
