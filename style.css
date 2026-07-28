@@ -2576,7 +2576,7 @@ select:focus-visible {
 
 /* Alternating Sections Update */
 .why-alt-section {
-    padding: var(--space-3xl) 0;
+    padding: 120px 0 80px;
 }
 .why-alt-section:nth-child(even) {
     background: var(--color-bg-alt);
