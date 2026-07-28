@@ -222,7 +222,7 @@ button {
 }
 
 .header__inner {
-    max-width: 1440px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 clamp(0.75rem, 2vw, 3rem);
     height: 100%;
@@ -259,7 +259,7 @@ button {
 .header__nav {
     display: none;
     align-items: center;
-    gap: clamp(0.75rem, 1.2vw, 1.5rem);
+    gap: clamp(0.75rem, 1.5vw, 2rem);
 }
 
 @media (min-width: 1024px) {
@@ -270,7 +270,7 @@ button {
 
 .header__link {
     font-family: var(--font-sans);
-    font-size: clamp(0.75rem, 0.9vw, 0.85rem);
+    font-size: clamp(0.8rem, 0.95vw, 0.95rem);
     font-weight: 500;
     letter-spacing: 0.05em;
     color: var(--color-charcoal);
@@ -350,10 +350,10 @@ button {
 .header__link--cta {
     background: var(--color-gold);
     color: white !important;
-    padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 1.5vw, 1.5rem);
+    padding: clamp(0.6rem, 1.2vw, 0.8rem) clamp(1.2rem, 2vw, 2rem);
     border-radius: 9999px;
     font-weight: 600;
-    font-size: clamp(0.75rem, 0.9vw, 0.85rem);
+    font-size: clamp(0.8rem, 0.95vw, 0.95rem);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     white-space: nowrap !important;
