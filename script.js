@@ -217,12 +217,44 @@
         });
     }
 
+    // ──────────────────────────────────────────
+    // FAQ Accordion
+    // ──────────────────────────────────────────
+    function initFAQ() {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.closest('.faq-item');
+                const answer = item.querySelector('.faq-answer');
+                
+                // Close currently active items (optional - makes it an accordion)
+                const currentlyActive = document.querySelector('.faq-item.active');
+                if (currentlyActive && currentlyActive !== item) {
+                    currentlyActive.classList.remove('active');
+                    currentlyActive.querySelector('.faq-answer').style.maxHeight = null;
+                }
+                
+                // Toggle current item
+                item.classList.toggle('active');
+                
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = null;
+                }
+            });
+        });
+    }
 
-    // ─── INIT ON LOAD ──────────────────────────────────
+    // ──────────────────────────────────────────
+    // INIT ON LOAD
+    // ──────────────────────────────────────────
     updateHeader();
     initSmileSliders();
     // initBookingForm(); // Disabled to allow native FormSubmit.co submission
     initHeroAudio();
+    initFAQ();
 
     // Small delay for hero reveal elements to feel intentional
     window.addEventListener('load', () => {
