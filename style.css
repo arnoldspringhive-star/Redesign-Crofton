@@ -2608,3 +2608,61 @@ select:focus-visible {
     background: var(--color-gold-soft);
 }
 
+
+/* ==========================================================================
+   HEADER & LAYOUT HIGH PRIORITY FIXES
+   ========================================================================== */
+
+/* 1. Global Section Spacing (Max 60px top/bottom) */
+:root {
+    --space-xl: 40px !important;
+    --space-2xl: 50px !important;
+    --space-3xl: 60px !important;
+    --space-4xl: 60px !important;
+}
+
+/* 2. Header Visibility & Solid Background */
+.header {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+}
+.header--scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* 3. Header Text Color & Weight */
+.header__link {
+    color: #222222 !important;
+    font-weight: 600 !important;
+}
+.header--hero .header__link,
+.header--scrolled .header__link {
+    color: #222222 !important;
+}
+
+/* 4. Logo Always Dark */
+.header--hero .header__logo-img {
+    filter: none !important;
+}
+
+/* 5. Navbar Layout */
+.header__inner {
+    justify-content: space-between !important;
+    max-width: 1440px !important;
+}
+.header__nav {
+    justify-content: flex-end !important;
+    flex-grow: 1 !important;
+    gap: clamp(16px, 1.5vw, 24px) !important;
+}
+
+/* 6. CTA Button Fix */
+.header__link--cta {
+    padding: 12px 28px !important;
+    margin-left: 0 !important;
+}
+
