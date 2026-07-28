@@ -2556,7 +2556,7 @@ select:focus-visible {
     justify-content: center;
     background: var(--color-bg-alt);
     border-radius: 50%;
-    color: var(--color-primary);
+    color: var(--color-gold);
 }
 .why-feature-icon svg {
     width: 32px;
@@ -2584,7 +2584,7 @@ select:focus-visible {
 
 /* Custom CTA Block */
 .why-cta {
-    background: var(--color-primary);
+    background: var(--color-espresso);
     color: white;
     text-align: center;
     padding: var(--space-4xl) 0;
