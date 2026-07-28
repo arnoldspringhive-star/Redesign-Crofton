@@ -2546,6 +2546,12 @@ select:focus-visible {
 .hero--services .section-label {
     color: var(--color-gold);
 }
+.hero--services p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
 
 /* Feature Grid */
 .why-features {
