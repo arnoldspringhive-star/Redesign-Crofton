@@ -2542,6 +2542,15 @@ select:focus-visible {
 }
 .hero--services .page-title {
     color: white;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+}
+@media (min-width: 992px) {
+    .hero--services .page-title {
+        white-space: nowrap;
+    }
+    .hero--services .container {
+        max-width: 1400px;
+    }
 }
 .hero--services .section-label {
     color: var(--color-gold);
