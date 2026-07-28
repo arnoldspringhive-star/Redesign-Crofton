@@ -229,6 +229,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: clamp(1rem, 3vw, 3rem);
 }
 
 .header__logo {
