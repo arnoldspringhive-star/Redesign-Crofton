@@ -1325,7 +1325,7 @@ button {
    DOCTOR / TEAM SECTION
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 .doctor {
-    padding: var(--space-4xl) 0;
+    padding: 100px 0;
     background: #ffffff;
     border-bottom: 1px solid var(--color-stone);
 }
@@ -2818,5 +2818,6 @@ select:focus-visible {
 .header__link.header__link--cta:hover {
     color: #ffffff !important;
 }
+
 
 
