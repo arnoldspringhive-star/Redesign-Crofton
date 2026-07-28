@@ -18,14 +18,13 @@
     // ─── HEADER: TRANSPARENT → SOLID ON SCROLL ──────────
     function updateHeader() {
         const scrollY = window.scrollY;
-        const heroBottom = hero ? hero.offsetHeight - 100 : 0;
 
         if (scrollY > 50) {
             header.classList.add('header--scrolled');
-            header.classList.remove('header--hero');
+            if (hero) header.classList.remove('header--hero');
         } else {
             header.classList.remove('header--scrolled');
-            header.classList.add('header--hero');
+            if (hero) header.classList.add('header--hero');
         }
     }
 

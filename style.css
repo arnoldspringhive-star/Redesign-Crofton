@@ -222,7 +222,7 @@ button {
 }
 
 .header__inner {
-    max-width: var(--max-width);
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 clamp(1.25rem, 4vw, 3rem);
     height: 100%;
@@ -259,7 +259,7 @@ button {
 .header__nav {
     display: none;
     align-items: center;
-    gap: clamp(1.5rem, 2.5vw, 2.5rem);
+    gap: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 @media (min-width: 1024px) {
@@ -270,12 +270,13 @@ button {
 
 .header__link {
     font-family: var(--font-sans);
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     color: var(--color-charcoal);
     position: relative;
     padding: 0.25rem 0;
+    white-space: nowrap;
 }
 
 .header--hero .header__link {
@@ -349,12 +350,16 @@ button {
 .header__link--cta {
     background: var(--color-gold);
     color: white !important;
-    padding: 0.55rem 1.4rem;
-    border-radius: var(--radius-pill);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
     font-weight: 600;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     transition: background var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
 }
 
