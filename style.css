@@ -2824,3 +2824,16 @@ select:focus-visible {
 
 
 
+
+
+/* Services Grid in Footer */
+.footer__services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem 2rem;
+}
+@media (max-width: 768px) {
+    .footer__services-grid {
+        grid-template-columns: 1fr;
+    }
+}
