@@ -2688,7 +2688,8 @@ select:focus-visible {
 }
 .community__flyer-img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1024 / 535;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
