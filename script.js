@@ -247,6 +247,35 @@
         });
     }
 
+    /* =========================================
+       Image Lightbox
+    ========================================= */
+    function initLightbox() {
+        const lightbox = document.getElementById('image-lightbox');
+        if (!lightbox) return;
+
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox__close');
+        const galleryImages = document.querySelectorAll('.community__flyer-img');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.classList.add('lightbox--active');
+                lightboxImg.src = img.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('lightbox--active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('lightbox--active');
+            }
+        });
+    }
+
     // ──────────────────────────────────────────
     // INIT ON LOAD
     // ──────────────────────────────────────────
@@ -255,6 +284,7 @@
     // initBookingForm(); // Disabled to allow native FormSubmit.co submission
     initHeroAudio();
     initFAQ();
+    initLightbox();
 
     // Small delay for hero reveal elements to feel intentional
     window.addEventListener('load', () => {

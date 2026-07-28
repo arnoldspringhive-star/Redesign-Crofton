@@ -2711,3 +2711,48 @@ select:focus-visible {
     padding: 0 0.5rem;
 }
 
+/* ==========================================================================
+   IMAGE LIGHTBOX
+   ========================================================================== */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+}
+.lightbox--active {
+    display: flex;
+}
+.lightbox__content {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+.lightbox__close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.lightbox__close:hover {
+    color: #ccc;
+}
+@keyframes zoomIn {
+    from {transform: scale(0.95); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
