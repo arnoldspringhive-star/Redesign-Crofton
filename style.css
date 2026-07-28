@@ -222,20 +222,19 @@ button {
 }
 
 .header__inner {
-    max-width: 1800px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 clamp(0.75rem, 2vw, 3rem);
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: clamp(1rem, 3vw, 3rem);
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .header__logo {
     display: flex;
     align-items: center;
-    margin-right: clamp(20px, 4vw, 60px) !important;
     flex-shrink: 0;
 }
 
@@ -263,6 +262,7 @@ button {
     display: none;
     align-items: center;
     gap: clamp(0.75rem, 1.5vw, 2rem);
+    flex-grow: 1;
 }
 
 @media (min-width: 1024px) {
@@ -364,6 +364,7 @@ button {
     align-items: center;
     justify-content: center;
     transition: background var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+    margin-left: auto;
 }
 
 .header__link--cta::after {
