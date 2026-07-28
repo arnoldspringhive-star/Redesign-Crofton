@@ -235,6 +235,7 @@ button {
 .header__logo {
     display: flex;
     align-items: center;
+    margin-right: 15px; /* Added right margin to guarantee space before the first nav link */
 }
 
 .header__logo-img {
