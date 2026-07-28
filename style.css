@@ -1726,7 +1726,7 @@ button {
    TESTIMONIALS
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 .testimonials {
-    padding: var(--space-4xl) 0;
+    padding: 100px 0;
     background: var(--color-bg);
 }
 
@@ -2818,6 +2818,7 @@ select:focus-visible {
 .header__link.header__link--cta:hover {
     color: #ffffff !important;
 }
+
 
 
 
