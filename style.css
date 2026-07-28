@@ -2664,3 +2664,37 @@ select:focus-visible {
     margin-left: 0 !important;
 }
 
+/* ==========================================================================
+   COMMUNITY INVOLVEMENT SECTION
+   ========================================================================== */
+.community {
+    padding: 3rem 0;
+}
+.community__header {
+    max-width: 800px;
+    margin: 0 auto var(--space-xl) auto;
+}
+.community__flyers {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .community__flyers {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.community__flyer-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.community__flyer-img:hover {
+    transform: scale(1.02);
+}
+
