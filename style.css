@@ -2169,7 +2169,7 @@ button {
 
 .footer__grid {
     display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr 2fr 1fr;
     gap: var(--space-xl);
     margin-bottom: var(--space-3xl);
 }
@@ -2828,12 +2828,16 @@ select:focus-visible {
 
 /* Services Grid in Footer */
 .footer__services-grid {
+    white-space: nowrap;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.65rem 2rem;
 }
 @media (max-width: 768px) {
     .footer__services-grid {
+    white-space: nowrap;
         grid-template-columns: 1fr;
     }
 }
+
+
