@@ -2365,6 +2365,11 @@ select:focus-visible {
 
 /* ─── RESTORED LAYOUTS ──────────────────────────────────── */
 
+/* Service Details Container */
+.service-details {
+    margin-top: 100px;
+}
+
 /* Service Detail Blocks */
 .service-detail-block {
     display: grid;
