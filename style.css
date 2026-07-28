@@ -2542,14 +2542,14 @@ select:focus-visible {
 }
 .hero--services .page-title {
     color: white;
-    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    font-size: clamp(2.5rem, 5vw, 4rem);
 }
 @media (min-width: 992px) {
     .hero--services .page-title {
         white-space: nowrap;
     }
     .hero--services .container {
-        max-width: 1400px;
+        max-width: 1600px;
     }
 }
 .hero--services .section-label {
