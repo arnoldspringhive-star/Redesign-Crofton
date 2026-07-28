@@ -1326,7 +1326,7 @@ button {
    ═══════════════════════════════════════════════════════════════ */
 .doctor {
     padding: var(--space-4xl) 0;
-    background: var(--color-bg-alt);
+    background: #ffffff;
     border-bottom: 1px solid var(--color-stone);
 }
 
