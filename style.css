@@ -2668,7 +2668,7 @@ select:focus-visible {
    COMMUNITY INVOLVEMENT SECTION
    ========================================================================== */
 .community {
-    padding: 3rem 0;
+    padding: 100px 0;
 }
 .community__header {
     max-width: 800px;
