@@ -2697,4 +2697,16 @@ select:focus-visible {
 .community__flyer-img:hover {
     transform: scale(1.02);
 }
+.community__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.community__desc {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 0.5rem;
+}
 
