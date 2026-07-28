@@ -2811,3 +2811,10 @@ select:focus-visible {
     to {transform: scale(1); opacity: 1;}
 }
 
+
+
+/* Fix CTA button text color on hover */
+.header__link.header__link--cta,
+.header__link.header__link--cta:hover {
+    color: #ffffff !important;
+}
