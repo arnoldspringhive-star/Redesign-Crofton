@@ -13,7 +13,7 @@
     const hero          = document.getElementById('hero');
     const revealEls     = document.querySelectorAll('[data-reveal]');
     const parallaxSections = document.querySelectorAll('[data-parallax]');
-    const mobileLinks   = document.querySelectorAll('.mobile-menu__link');
+    const mobileLinks   = document.querySelectorAll('.mobile-menu__link, .mobile-menu__dropdown-link');
 
     // ─── HEADER: TRANSPARENT → SOLID ON SCROLL ──────────
     function updateHeader() {

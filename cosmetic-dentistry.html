@@ -1,25 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmetic Dentistry | Crofton Dental Center</title>
-    <meta name="description" content="Explore our comprehensive luxury dental services including cosmetic, family, restorative, implants, and sedation dentistry.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2242%22 fill=%22%231E3F3A%22/><text x=%2250%25%22 y=%2255%25%22 font-family=%22sans-serif%22 font-size=%2235%22 fill=%22%23C5A46D%22 font-weight=%22bold%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>C</text></svg>">
-    
-    <!-- Premium Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Learn more about Cosmetic Dentistry at Crofton Dental Center.">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="inner-page">
+<body>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-    <!-- NAVIGATION -->
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+    <!-- NAVIGATION (WILL BE UPDATED BY SCRIPT LATER BUT WE CAN JUST USE THE CORRECT ONE NOW) -->
     <header id="main-header" class="header">
         <div class="header__inner">
             <a href="index.html" class="header__logo" id="logo-link">
@@ -27,12 +18,33 @@
             </a>
             <nav class="header__nav" id="main-nav" aria-label="Main navigation">
                 <a href="index.html" class="header__link">Home</a>
-                <a href="about.html" class="header__link">About Us</a>
-                <a href="services.html" class="header__link active">Services</a>
-                <a href="careers.html" class="header__link">Careers</a>
-                <a href="new-patient.html" class="header__link">New Patient</a>
-                <a href="testimonials.html" class="header__link">Testimonials</a>
-                <a href="contact.html" class="header__link header__link--cta" id="nav-book-btn">Contact Us</a>
+                <a href="why-choose-us.html" class="header__link">Why Choose Us</a>
+                <a href="the-crofton-experience.html" class="header__link">Crofton Experience</a>
+                <a href="technology.html" class="header__link">Technology</a>
+                <a href="meet-the-team.html" class="header__link">Meet the Team</a>
+                <a href="new-patient.html" class="header__link">New Patients</a>
+                <a href="smile-gallery.html" class="header__link">Smile Gallery</a>
+                <a href="index.html#community" class="header__link">Community</a>
+                
+                <div class="header__dropdown">
+                    <a href="services.html" class="header__link active">Services</a>
+                    <div class="header__dropdown-menu">
+                        <a href="family-dentistry.html" class="header__dropdown-link">Family Dentistry</a>
+                        <a href="cosmetic-dentistry.html" class="header__dropdown-link">Cosmetic Dentistry</a>
+                        <a href="dental-implants.html" class="header__dropdown-link">Dental Implants</a>
+                        <a href="teeth-whitening.html" class="header__dropdown-link">Whitening</a>
+                        <a href="invisalign.html" class="header__dropdown-link">Invisalign</a>
+                        <a href="dental-crowns.html" class="header__dropdown-link">Crowns</a>
+                        <a href="dental-bridges.html" class="header__dropdown-link">Bridges</a>
+                        <a href="dentures.html" class="header__dropdown-link">Dentures</a>
+                        <a href="root-canal.html" class="header__dropdown-link">Root Canal</a>
+                        <a href="emergency-dentistry.html" class="header__dropdown-link">Emergency Dentistry</a>
+                        <a href="childrens-dentistry.html" class="header__dropdown-link">Children Dentistry</a>
+                        <a href="preventive-dentistry.html" class="header__dropdown-link">Preventive Dentistry</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="header__link header__link--cta" id="nav-book-btn">Book Appointment</a>
             </nav>
             <button class="header__menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span class="header__menu-bar"></span>
@@ -42,131 +54,132 @@
         </div>
     </header>
 
-    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <nav class="mobile-menu__nav">
             <a href="index.html" class="mobile-menu__link">Home</a>
-            <a href="about.html" class="mobile-menu__link">About Us</a>
-            <a href="services.html" class="mobile-menu__link">Services</a>
-            <a href="careers.html" class="mobile-menu__link">Careers</a>
-            <a href="new-patient.html" class="mobile-menu__link">New Patient</a>
-            <a href="testimonials.html" class="mobile-menu__link">Testimonials</a>
-            <a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">Contact Us</a>
+            <a href="why-choose-us.html" class="mobile-menu__link">Why Choose Us</a>
+            <a href="the-crofton-experience.html" class="mobile-menu__link">Crofton Experience</a>
+            <a href="technology.html" class="mobile-menu__link">Technology</a>
+            <a href="meet-the-team.html" class="mobile-menu__link">Meet the Team</a>
+            <a href="new-patient.html" class="mobile-menu__link">New Patients</a>
+            <a href="smile-gallery.html" class="mobile-menu__link">Smile Gallery</a>
+            <a href="index.html#community" class="mobile-menu__link">Community</a>
+            <div style="text-align: center;">
+                <a href="services.html" class="mobile-menu__link active">Services</a>
+                <div class="mobile-menu__dropdown">
+                    <a href="family-dentistry.html" class="mobile-menu__dropdown-link">Family Dentistry</a>
+                    <a href="cosmetic-dentistry.html" class="mobile-menu__dropdown-link">Cosmetic Dentistry</a>
+                    <a href="dental-implants.html" class="mobile-menu__dropdown-link">Dental Implants</a>
+                    <a href="teeth-whitening.html" class="mobile-menu__dropdown-link">Whitening</a>
+                    <a href="invisalign.html" class="mobile-menu__dropdown-link">Invisalign</a>
+                    <a href="dental-crowns.html" class="mobile-menu__dropdown-link">Crowns</a>
+                    <a href="dental-bridges.html" class="mobile-menu__dropdown-link">Bridges</a>
+                    <a href="dentures.html" class="mobile-menu__dropdown-link">Dentures</a>
+                    <a href="root-canal.html" class="mobile-menu__dropdown-link">Root Canal</a>
+                    <a href="emergency-dentistry.html" class="mobile-menu__dropdown-link">Emergency Dentistry</a>
+                    <a href="childrens-dentistry.html" class="mobile-menu__dropdown-link">Children Dentistry</a>
+                    <a href="preventive-dentistry.html" class="mobile-menu__dropdown-link">Preventive Dentistry</a>
+                </div>
+            </div>
+            <a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">Book Appointment</a>
         </nav>
     </div>
 
     <main class="main-content">
-
+        <!-- HERO SECTION -->
         <section class="page-header" data-reveal>
             <div class="container text-center">
                 <span class="section-subtitle">Our Services</span>
                 <h1 class="section-title" style="margin-bottom: var(--space-md);">Cosmetic Dentistry</h1>
-                <p class="section-text" style="max-width: 900px; margin: 0 auto var(--space-lg) auto;">A radiant smile has the power to transform how you feel and how the world sees you. Our premium cosmetic treatments are meticulously tailored to enhance your natural beauty and boost your self-confidence. Using state-of-the-art techniques and an artistic approach, we work closely with you to design a stunning, lifelike smile in a comfortable, luxurious setting where your aesthetic goals become a beautiful reality.</p>
+                <p class="section-text" style="max-width: 900px; margin: 0 auto var(--space-lg) auto;">A radiant smile has the power to transform how you feel and how the world sees you. Our premium cosmetic treatments are meticulously tailored to enhance your natural beauty and boost your self-confidence.</p>
                 <a href="contact.html" class="btn btn--primary">Book an Appointment</a>
             </div>
         </section>
 
+        <!-- OVERVIEW & BENEFITS & PROCESS -->
         <section class="section-padding">
             <div class="container">
                 <div class="patient-guide__grid">
+                    <!-- MAIN CONTENT -->
                     <div class="patient-guide__content">
-                        <h2>About Cosmetic Dentistry</h2>
+                        <h2>Overview</h2>
                         <p>Your smile is often the first thing people notice, and we believe it should be a true reflection of your inner confidence and vitality. Our cosmetic dentistry services are meticulously tailored to elevate your appearance and boost your self-esteem. We view cosmetic dentistry as a fine art, where clinical precision meets aesthetic brilliance.</p>
-                        <p>Whether you are seeking a subtle professional brightening for an upcoming special event or a comprehensive, transformative smile makeover, Dr. Sood combines her artistic vision with the latest advancements in dental technology. We utilize only the highest quality porcelains and composite materials to ensure your results are not just beautiful, but highly durable and entirely lifelike. Every treatment plan is completely customized to your facial structure, skin tone, and personal goals, guaranteeing a radiant smile that looks perfectly natural.</p>
+                        <p>Whether you are seeking a subtle professional brightening for an upcoming special event or a comprehensive, transformative smile makeover, we combine our artistic vision with the latest advancements in dental technology to deliver stunning, lifelike results.</p>
                         
-                        <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Services Included</h3>
-                        <ul class="luxury-list">
-                            <li>Custom Porcelain Veneers &amp; Lumineers</li>
-                            <li>Professional In-Office Teeth Whitening</li>
-                            <li>Composite Resin Bonding</li>
-                            <li>Complete Smile Makeovers</li>
-                            <li>Invisalign Clear Aligners</li>
-                            <li>Gum Contouring</li>
-                        </ul>
-                        
-                        <h3 style="margin-top: 2rem; margin-bottom: 1rem;">What to Expect</h3>
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem;">The Process</h3>
                         <ul class="luxury-list luxury-list--ordered">
-                            <li>Comprehensive aesthetic consultation</li>
-                            <li>Digital smile design and virtual preview</li>
-                            <li>Customized, step-by-step treatment planning</li>
-                            <li>Precision crafting of your restorations</li>
-                            <li>The final reveal of your radiant new smile</li>
+                            <li>Comprehensive aesthetic consultation and evaluation</li><li>Digital smile design and virtual preview</li><li>Customized, step-by-step treatment planning</li><li>Precision crafting of your restorations</li><li>The final reveal of your radiant new smile</li>
                         </ul>
                     </div>
                     
+                    <!-- SIDEBAR -->
                     <aside class="patient-guide__sidebar">
                         <div class="sidebar-box">
                             <h3 style="margin-bottom: 1.5rem;">Key Benefits</h3>
                             <ul class="luxury-list">
-                                <li>Dramatically improves self-confidence and self-esteem</li>
-                                <li>Seamlessly corrects chips, cracks, and discoloration</li>
-                                <li>Aligns crooked or crowded teeth without metal braces</li>
-                                <li>Creates a youthful, vibrant, and healthy appearance</li>
-                                <li>Provides results that are highly durable and stain-resistant</li>
+                                <li>Enhances natural facial aesthetics</li><li>Boosts self-confidence and self-esteem</li><li>Corrects chips, gaps, and discoloration</li><li>Long-lasting, durable, and lifelike results</li>
                             </ul>
-                        </div>
-                        
-                        <div class="sidebar-box" style="background: var(--color-charcoal); color: white; text-align: center;">
-                            <h3 style="color: white; margin-bottom: 1rem;">Ready to Begin?</h3>
-                            <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem;">Schedule Your Visit Today</p>
-                            <a href="contact.html" class="btn btn--primary" style="width: 100%;">Contact Us</a>
+                            
+                            <hr style="border: 0; border-top: 1px solid var(--color-gold-soft); margin: 2rem 0;">
+                            
+                            <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">Ready to restore your smile?</h3>
+                            <p style="margin-bottom: 1.5rem; font-size: 0.9rem;">Schedule your consultation today.</p>
+                            <a href="contact.html" class="btn btn--primary" style="width: 100%; justify-content: center;">Book Consultation</a>
                         </div>
                     </aside>
                 </div>
             </div>
         </section>
-    
-</main>
+        
+        <!-- CTA SECTION -->
+        <section class="cta-section text-center section-padding" style="background-color: var(--color-night); color: var(--color-linen);">
+            <div class="container">
+                <h2 style="color: var(--color-linen); margin-bottom: 1rem;">Experience the Difference</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem auto; color: rgba(255, 255, 255, 0.8);">Let us provide you with the exceptional Cosmetic Dentistry care you deserve in a luxurious, relaxing environment.</p>
+                <a href="contact.html" class="btn btn--primary">Schedule Your Visit Today</a>
+            </div>
+        </section>
+    </main>
 
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-    <!-- FOOTER -->
-    <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-    <footer class="footer" id="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__grid">
-                <div class="footer__brand">
+                <div class="footer__col">
                     <img src="assets/logo_clean.png" alt="Crofton Dental Center" class="footer__logo">
-                    <p class="footer__description">Personalized, compassionate dentistry in a warm and comforting environment. Combining advanced technology with a gentle touch to care for your smile.</p>
+                    <p class="footer__desc">Redefining the dental experience with luxury, compassion, and clinical excellence.</p>
                 </div>
-                <div class="footer__links">
-                    <h4 class="footer__col-title">Navigate</h4>
-                    <a href="index.html" class="footer__link">Home</a>
-                    <a href="about.html" class="footer__link">About Us</a>
-                    <a href="services.html" class="footer__link">Services</a>
-                    <a href="careers.html" class="footer__link">Careers</a>
-                    <a href="new-patient.html" class="footer__link">New Patient & FAQ</a>
-                    <a href="testimonials.html" class="footer__link">Testimonials</a>
-                    <a href="contact.html" class="footer__link">Contact Us</a>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Contact</h4>
+                    <address class="footer__contact" style="font-style: normal;">
+                        <p>123 Luxury Lane<br>Crofton, MD 21114</p>
+                        <p><a href="tel:5551234567">(555) 123-4567</a></p>
+                        <p><a href="mailto:arnold.springhive@gmail.com">arnold.springhive@gmail.com</a></p>
+                    </address>
                 </div>
-                <div class="footer__links">
-                    <h4 class="footer__col-title">Services</h4>
-                    <a href="cosmetic-dentistry.html" class="footer__link">Cosmetic Dentistry</a>
-                    <a href="family-dentistry.html" class="footer__link">Family & General</a>
-                    <a href="restorative-dentistry.html" class="footer__link">Dental Implants</a>
-                    <a href="cosmetic-dentistry.html" class="footer__link">Invisalign</a>
-                    <a href="contact.html" class="footer__link">Sedation Dentistry</a>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="new-patient.html">New Patient</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
-                <div class="footer__links">
-                    <h4 class="footer__col-title">Connect</h4>
-                    <a href="tel:+14107211138" class="footer__link">(410) 721-1138</a>
-                    <a href="#" class="footer__link">Facebook</a>
-                    <a href="#" class="footer__link">Instagram</a>
-                    <a href="#" class="footer__link">Google Reviews</a>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Hours</h4>
+                    <ul class="footer__hours">
+                        <li><span>Mon-Thu:</span> 8:00 AM - 5:00 PM</li>
+                        <li><span>Friday:</span> 8:00 AM - 2:00 PM</li>
+                        <li><span>Weekend:</span> Closed</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p class="footer__copy">&copy; 2026 Crofton Dental Center. All rights reserved.</p>
-                <div class="footer__legal">
-                    <a href="#" class="footer__legal-link">Privacy Policy</a>
-                    <a href="#" class="footer__legal-link">Terms of Service</a>
-                    <a href="#" class="footer__legal-link">Accessibility</a>
-                </div>
+                <p>&copy; 2026 Crofton Dental Center. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
-
