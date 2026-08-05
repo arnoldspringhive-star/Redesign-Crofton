@@ -34,7 +34,7 @@ services_html = '''        <section class="service-details">
                 <article id="implants" class="service-detail-block" data-reveal>
                     <div class="service-detail-block__text">
                         <h2>Dental Implants</h2>
-                        <p>Restore both the flawless function and the seamless aesthetics of your smile with our state-of-the-art restorative dentistry. We specialize in complex restorative cases and dental implant placements, utilizing advanced 3D CBCT guided imaging for unparalleled precision and safety. Whether you need a single same-day crown or a full-arch restoration, we ensure your new teeth look, feel, and function exactly like your natural teeth.</p>
+                        <p>Restore both the flawless function and the seamless aesthetics of your smile with our state of the art restorative dentistry. We specialize in complex restorative cases and dental implant placements, utilizing advanced 3D CBCT guided imaging for unparalleled precision and safety. Whether you need a single same-day crown or a full-arch restoration, we ensure your new teeth look, feel, and function exactly like your natural teeth.</p>
                         <a href="dental-implants.html" class="btn btn--primary" style="margin-top: 1rem;">Learn More</a>
                     </div>
                     <div class="service-detail-block__img">
@@ -177,3 +177,4 @@ if start_idx != -1:
     print("Successfully replaced services section.")
 else:
     print("Could not find services section.")
+

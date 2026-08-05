@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 
 const indexHtml = fs.readFileSync('index.html', 'utf8');
 
@@ -209,7 +209,7 @@ const servicesContent = \`
             <article id="implants" class="service-detail-block" data-reveal>
                 <div class="service-detail-block__text">
                     <h2>Implants & Restorative Care</h2>
-                    <p>Restore the function and aesthetics of your smile with state-of-the-art restorative dentistry. We specialize in implant placements using 3D CBCT guided imaging for unparalleled precision, ensuring your new teeth look, feel, and function like natural teeth.</p>
+                    <p>Restore the function and aesthetics of your smile with state of the art restorative dentistry. We specialize in implant placements using 3D CBCT guided imaging for unparalleled precision, ensuring your new teeth look, feel, and function like natural teeth.</p>
                     <ul class="luxury-list">
                         <li>Dental Implants (Single & Multiple)</li>
                         <li>All-on-4® Implant Supported Dentures</li>
@@ -252,7 +252,7 @@ const servicesContent = \`
                 <div class="service-detail-block__text">
                     <h2>Emergency Dental Care</h2>
                     <p>Dental emergencies happen unexpectedly. We prioritize your comfort and health by offering same-day emergency appointments for severe pain, broken teeth, lost crowns, or trauma. We are here to relieve your pain immediately.</p>
-                    <a href="tel:+14107211138" class="btn btn--ghost" style="margin-top: 1rem; color: var(--color-error); border-color: var(--color-error);">Call For Emergency: (410) 721-1138</a>
+                    <a href="tel:+13012613800" class="btn btn--ghost" style="margin-top: 1rem; color: var(--color-error); border-color: var(--color-error);">Call For Emergency: (301) 261-3800</a>
                 </div>
                 <div class="service-detail-block__img">
                     <img src="assets/service_emergency.png" alt="Emergency Dentistry">
@@ -431,7 +431,7 @@ const newPatientContent = \`
                 <div class="faq-item">
                     <button class="faq-question">What should I do in a dental emergency? <span class="faq-icon">+</span></button>
                     <div class="faq-answer">
-                        <p>If you are experiencing severe pain, swelling, or trauma to your teeth, please call our office immediately at (410) 721-1138. We reserve time in our schedule every day for emergency care.</p>
+                        <p>If you are experiencing severe pain, swelling, or trauma to your teeth, please call our office immediately at (301) 261-3800. We reserve time in our schedule every day for emergency care.</p>
                     </div>
                 </div>
             </div>
@@ -521,7 +521,7 @@ const testimonialsContent = \`
                 <div class="testimonial-card" data-reveal data-delay="200">
                     <div class="testimonial-card__stars">★★★★★</div>
                     <blockquote class="testimonial-card__quote">
-                        "Dr. Sood and her team are exceptional. They combine state-of-the-art technology with genuine compassion. Every visit feels like a personalized experience, not just an appointment."
+                        "Dr. Sood and her team are exceptional. They combine state of the art technology with genuine compassion. Every visit feels like a personalized experience, not just an appointment."
                     </blockquote>
                     <div class="testimonial-card__author">
                         <span class="testimonial-card__name">Michael R.</span>
@@ -587,7 +587,7 @@ const contactContent = \`
                             </div>
                             <div class="booking__form-group">
                                 <label for="book-phone" class="booking__form-label">Phone Number</label>
-                                <input type="tel" name="phone" id="book-phone" class="booking__form-input" required placeholder="(410) 721-1138">
+                                <input type="tel" name="phone" id="book-phone" class="booking__form-input" required placeholder="(301) 261-3800">
                             </div>
                             <div class="booking__form-group">
                                 <label for="book-email" class="booking__form-label">Email Address</label>
@@ -644,7 +644,7 @@ const contactContent = \`
                     <div class="booking__detail">
                         <h4 class="booking__detail-title">Contact</h4>
                         <p class="booking__detail-text">
-                            Phone: <a href="tel:+14107211138">(410) 721-1138</a><br>
+                            Phone: <a href="tel:+13012613800">(301) 261-3800</a><br>
                             Email: <a href="mailto:info@croftondentalcenter.com">info@croftondentalcenter.com</a>
                         </p>
                     </div>
@@ -660,3 +660,5 @@ const contactContent = \`
 createPage('contact.html', 'Contact Us & Book Appointment', 'Contact Crofton Dental Center today to schedule your luxury dental experience. View our location, hours, and booking form.', contactContent);
 
 console.log("Multipage generation complete.");
+
+
