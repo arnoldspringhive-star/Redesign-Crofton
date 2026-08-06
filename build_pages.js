@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 
 const indexHtml = fs.readFileSync('index.html', 'utf8');
 
@@ -145,7 +145,7 @@ const aboutContent = \`
                 </div>
                 <div class="community__card" data-reveal data-delay="300">
                     <div class="community__card-img-wrap">
-                        <img src="assets/community_spca_zoey.png" alt="SPCA partnership with Zoey" class="community__card-img">
+                        <img src="assets/ZOEYS.png" alt="SPCA partnership with Zoey" class="community__card-img">
                     </div>
                     <h3 class="community__card-title">SPCA Partnership</h3>
                     <p class="community__card-desc">Proud supporters of the Anne Arundel County SPCA, because caring for our community includes our four-legged friends too.</p>
