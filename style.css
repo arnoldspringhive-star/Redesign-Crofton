@@ -198,7 +198,7 @@ button {
    HEADER / NAVIGATION
    â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â• â•  */
 .header {
-    position: fixed;
+    position: absolute; /* Scrolls with page on mobile/tablet/laptop */
     top: 0;
     left: 0;
     right: 0;
@@ -214,6 +214,12 @@ button {
         border-color var(--duration-normal) var(--ease-out);
 }
 
+@media (min-width: 1441px) {
+    .header {
+        position: fixed; /* Sticky only on large desktop screens */
+    }
+}
+
 .header--scrolled {
     background: rgba(251, 249, 246, 0.75);
     backdrop-filter: saturate(180%) blur(20px);
@@ -222,14 +228,14 @@ button {
 }
 
 .header__inner {
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 clamp(1rem, 4vw, 5rem);
+    padding-left: 20px;
+    padding-right: 20px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: clamp(2rem, 4vw, 4rem);
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -264,11 +270,13 @@ button {
     gap: clamp(0.5rem, 1vw, 1.25rem);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .header__nav {
         display: flex;
-        flex: none;
+        flex: 1;
+        justify-content: flex-end;
         align-items: center;
+        gap: 24px;
     }
 }
 
@@ -376,11 +384,7 @@ button {
     transform: translateY(-1px);
 }
 
-@media (min-width: 1024px) {
-    .header__link--cta {
-        margin-left: clamp(0.5rem, 2vw, 2.5rem);
-    }
-}
+/* CTA margin removed for consistent gap */
 
 /* Mobile Toggle */
 .header__menu-toggle {
@@ -389,11 +393,16 @@ button {
     gap: 5px;
     padding: 8px;
     z-index: 1001;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .header__menu-toggle {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -409,7 +418,7 @@ button {
 }
 
 .header--hero .header__menu-bar {
-    background: white;
+    background: var(--color-charcoal);
 }
 
 .header--scrolled .header__menu-bar {
@@ -436,8 +445,10 @@ button {
     z-index: 999;
     background: var(--color-linen);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow-y: auto;
+    padding: 120px 40px 60px 40px;
     opacity: 0;
     visibility: hidden;
     transition:
@@ -453,13 +464,13 @@ button {
 .mobile-menu__nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: var(--space-lg);
 }
 
 .mobile-menu__link {
     font-family: var(--font-serif);
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: 30px;
     font-weight: 400;
     color: var(--color-charcoal);
     opacity: 0;
@@ -473,14 +484,15 @@ button {
 .mobile-menu__dropdown {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 0.75rem;
     margin-top: 0.5rem;
+    padding-right: 1.5rem; /* Visual indent for right-aligned sub-menu */
 }
 
 .mobile-menu__dropdown-link {
     font-family: var(--font-sans);
-    font-size: clamp(1rem, 3vw, 1.25rem);
+    font-size: 16px;
     color: var(--color-charcoal);
     opacity: 0.8;
 }
@@ -2710,22 +2722,8 @@ select:focus-visible {
     filter: none !important;
 }
 
-/* 5. Navbar Layout */
-.header__inner {
-    justify-content: space-between !important;
-    max-width: 1440px !important;
-}
-.header__nav {
-    justify-content: flex-end !important;
-    flex-grow: 1 !important;
-    gap: clamp(16px, 1.5vw, 24px) !important;
-}
-
-/* 6. CTA Button Fix */
-.header__link--cta {
-    padding: 12px 28px !important;
-    margin-left: 0 !important;
-}
+/* 5. Navbar Layout removed (using base styles) */
+/* 6. CTA Button Fix removed (using base styles) */
 
 /* ==========================================================================
    COMMUNITY INVOLVEMENT SECTION
@@ -2751,8 +2749,8 @@ select:focus-visible {
 }
 .community__flyer-img {
     width: 100%;
-    aspect-ratio: 1024 / 535;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
