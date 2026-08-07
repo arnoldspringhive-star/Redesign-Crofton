@@ -77,7 +77,7 @@ const aboutContent = \`
             <div class="doctor__grid">
                 <div class="doctor__info">
                     <span class="section-label" data-reveal>Meet the Doctor</span>
-                    <h2 class="doctor__name" data-reveal data-delay="100">Dr. Rahat Sood, DMD</h2>
+                    <h2 class="doctor__name" data-reveal data-delay="100">Rahat Sood, DMD</h2>
                     <p class="doctor__role" data-reveal data-delay="150">Founder & Lead Dentist</p>
                     
                     <blockquote class="doctor__quote" data-reveal data-delay="200">
@@ -111,7 +111,7 @@ const aboutContent = \`
 
                 <div class="doctor__portrait-wrapper" data-reveal>
                     <div class="doctor__portrait">
-                        <img src="assets/dr_sood.png" alt="Dr. Rahat Sood, DMD" class="doctor__image">
+                        <img src="assets/dr_sood.png" alt="Rahat Sood, DMD" class="doctor__image">
                         <div class="doctor__frame"></div>
                     </div>
                     <div class="doctor__badge">
@@ -154,7 +154,7 @@ const aboutContent = \`
         </div>
     </section>
 \`;
-createPage('about.html', 'About Us & Meet Dr. Sood', 'Learn about Crofton Dental Center, our luxury approach to dentistry, and meet our leading dentist Dr. Rahat Sood.', aboutContent);
+createPage('about.html', 'About Us & Meet Dr. Sood', 'Learn about Crofton Dental Center, our luxury approach to dentistry, and meet our leading dentist Rahat Sood.', aboutContent);
 
 // ==========================================
 // 2. SERVICES PAGE
@@ -631,20 +631,24 @@ const contactContent = \`
                 <div class="booking__details" data-reveal data-delay="200">
                     <div class="booking__detail">
                         <h4 class="booking__detail-title">Location</h4>
-                        <p class="booking__detail-text">1661 Crofton Blvd, Suite 1A<br>Crofton, MD 21114</p>
+                        <p class="booking__detail-text">1664 Village GRN<br>Crofton, MD 21114</p>
                     </div>
                     <div class="booking__detail">
                         <h4 class="booking__detail-title">Hours</h4>
                         <p class="booking__detail-text">
-                            Monday – Thursday: 8am – 5pm<br>
-                            Friday: 8am – 2pm<br>
-                            Saturday – Sunday: Closed
+                            Monday: Closed<br>
+                            Tuesday: 9:00 AM – 5:00 PM<br>
+                            Wednesday: 9:00 AM – 5:00 PM<br>
+                            Thursday: Closed<br>
+                            Friday: 9:00 AM – 5:00 PM<br>
+                            Saturday: 8:00 AM – 2:00 PM (Open on the first Saturday of every month only)
                         </p>
                     </div>
                     <div class="booking__detail">
                         <h4 class="booking__detail-title">Contact</h4>
                         <p class="booking__detail-text">
                             Phone: <a href="tel:+13012613800">(301) 261-3800</a><br>
+                            Fax: <a href="tel:+13019361633">1 (301) 936-1633</a><br>
                             Email: <a href="mailto:info@croftondentalcenter.com">info@croftondentalcenter.com</a>
                         </p>
                     </div>
