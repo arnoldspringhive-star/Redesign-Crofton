@@ -2182,9 +2182,15 @@ button {
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 .footer {
     padding: var(--space-3xl) 0 var(--space-lg);
-    background: #0d1a18;
+    background: #535353;
     color: rgba(255, 255, 255, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.footer .container {
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer__grid {
@@ -2216,9 +2222,9 @@ button {
 .footer__logo {
     height: 75px;
     width: auto;
+    object-fit: contain;
+    object-position: left center;
     margin-bottom: var(--space-sm);
-    filter: brightness(10);
-    opacity: 0.8;
 }
 
 .footer__description {
