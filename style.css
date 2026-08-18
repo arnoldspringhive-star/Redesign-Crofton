@@ -3166,4 +3166,10 @@ select:focus-visible {
         text-align: center !important;
         margin-top: 1rem !important;
     }
+    
+    /* Cinematic break height fix for mobile */
+    .cinematic-break {
+        height: 350px !important;
+        min-height: 350px !important;
+    }
 }
