@@ -294,3 +294,15 @@
 })();
 
 
+
+    // â”€â”€â”€ MOBILE MENU ACCORDION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    const accordionBtn = document.querySelector('.mobile-menu__accordion-btn');
+    const accordionDropdown = document.querySelector('.mobile-menu__dropdown');
+    
+    if (accordionBtn) {
+        accordionBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+    }

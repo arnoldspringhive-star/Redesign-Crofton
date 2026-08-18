@@ -65,13 +65,19 @@
         </div>
     </header>
 
-    <!-- Mobile Menu Overlay -->
+        <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-                <nav class="mobile-menu__nav">
+        <nav class="mobile-menu__nav">
             <a href="index.html" class="mobile-menu__link">Home</a>
-            <div style="text-align: center;">
-                <a href="services.html" class="mobile-menu__link">Services</a>
-                <div class="mobile-menu__dropdown">
+            
+            <div class="mobile-menu__accordion" id="mobile-services-accordion">
+                <button class="mobile-menu__accordion-btn" aria-expanded="false" aria-controls="mobile-services-dropdown">
+                    <span>Services</span>
+                    <svg class="mobile-menu__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="mobile-menu__dropdown" id="mobile-services-dropdown">
                     <a href="family-dentistry.html" class="mobile-menu__dropdown-link">Family Dentistry</a>
                     <a href="cosmetic-dentistry.html" class="mobile-menu__dropdown-link">Cosmetic Dentistry</a>
                     <a href="dental-implants.html" class="mobile-menu__dropdown-link">Dental Implants</a>
@@ -86,15 +92,14 @@
                     <a href="preventive-dentistry.html" class="mobile-menu__dropdown-link">Preventive Dentistry</a>
                 </div>
             </div>
-              <a href="why-choose-us.html" class="mobile-menu__link">Why Choose Us</a>
+
+            <a href="why-choose-us.html" class="mobile-menu__link">Why Choose Us</a>
             <a href="the-crofton-experience.html" class="mobile-menu__link">Crofton Experience</a>
             <a href="technology.html" class="mobile-menu__link">Technology</a>
             <a href="meet-the-team.html" class="mobile-menu__link">Meet the Team</a>
             <a href="new-patient.html" class="mobile-menu__link">New Patients</a>
-            <a href="smile-club.html" class="mobile-menu__link">Smile Club</a>
             <a href="smile-gallery.html" class="mobile-menu__link">Smile Gallery</a>
             <a href="index.html#community" class="mobile-menu__link">Community</a>
-            
             <a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">Book Appointment</a>
         </nav>
     </div>

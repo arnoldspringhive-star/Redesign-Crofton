@@ -71,13 +71,19 @@
         </div>
     </header>
 
-    <!-- Mobile Menu Overlay -->
+        <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <nav class="mobile-menu__nav">
             <a href="index.html" class="mobile-menu__link">Home</a>
-            <div style="text-align: right;">
-                <a href="services.html" class="mobile-menu__link">Services</a>
-                <div class="mobile-menu__dropdown">
+            
+            <div class="mobile-menu__accordion" id="mobile-services-accordion">
+                <button class="mobile-menu__accordion-btn" aria-expanded="false" aria-controls="mobile-services-dropdown">
+                    <span>Services</span>
+                    <svg class="mobile-menu__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="mobile-menu__dropdown" id="mobile-services-dropdown">
                     <a href="family-dentistry.html" class="mobile-menu__dropdown-link">Family Dentistry</a>
                     <a href="cosmetic-dentistry.html" class="mobile-menu__dropdown-link">Cosmetic Dentistry</a>
                     <a href="dental-implants.html" class="mobile-menu__dropdown-link">Dental Implants</a>
@@ -92,23 +98,17 @@
                     <a href="preventive-dentistry.html" class="mobile-menu__dropdown-link">Preventive Dentistry</a>
                 </div>
             </div>
+
             <a href="why-choose-us.html" class="mobile-menu__link">Why Choose Us</a>
             <a href="the-crofton-experience.html" class="mobile-menu__link">Crofton Experience</a>
             <a href="technology.html" class="mobile-menu__link">Technology</a>
             <a href="meet-the-team.html" class="mobile-menu__link">Meet the Team</a>
             <a href="new-patient.html" class="mobile-menu__link">New Patients</a>
-            <a href="smile-club.html" class="mobile-menu__link">Smile Club</a>
             <a href="smile-gallery.html" class="mobile-menu__link">Smile Gallery</a>
             <a href="index.html#community" class="mobile-menu__link">Community</a>
-
             <a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">Book Appointment</a>
         </nav>
     </div>
-
-
-    <!-- ═══════════════════════════════════════════════════ -->
-    <!-- HERO SECTION -->
-    <!-- ═══════════════════════════════════════════════════ -->
     <section id="hero" class="hero">
         <div class="hero__bg">
             <video class="hero__bg-video" autoplay loop muted playsinline poster="assets/crofton_exterior.png">
@@ -162,6 +162,26 @@
 
 
     <!-- ═══════════════════════════════════════════════════ -->
+        <!-- Mobile Hero Text Section (Hidden on Desktop/Tablet) -->
+    <section id="hero-mobile-text" class="hero-mobile-text" aria-hidden="true">
+        <div class="hero-mobile-text__content">
+            <div class="hero__badge" data-reveal>
+                <span class="hero__badge-line"></span>
+                <span class="hero__badge-text">Crofton Dental Center</span>
+            </div>
+            <h1 class="hero__title" data-reveal data-delay="200">
+                Where Health<br>
+                <em>and Happiness</em> Meet.
+            </h1>
+            <p class="hero__subtitle" data-reveal data-delay="400">A completely reimagined dental experience. We combine
+                world-class clinical excellence and state of the art technology with the warmth, comfort, and
+                personalized care of a luxury retreat. Your journey to a perfect smile begins here.</p>
+            <div class="hero__actions" data-reveal data-delay="600">
+                <a href="contact.html" class="btn btn--primary" id="hero-mobile-book-btn">Book an Appointment</a>
+            </div>
+        </div>
+    </section>
+
     <!-- EXPERIENCE / INTRO SECTION -->
     <!-- ═══════════════════════════════════════════════════ -->
     <section id="experience" class="experience">
@@ -899,6 +919,7 @@
 </body>
 
 </html>
+
 
 
 
