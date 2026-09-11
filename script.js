@@ -1,4 +1,4 @@
-﻿/* ═══════════════════════════════════════════════════════════════
+/* ═══════════════════════════════════════════════════════════════
    CROFTON DENTAL CENTER — INDEX 3 INTERACTIONS
    Scroll Reveal · Header Logic · Parallax · Mobile Menu
    ═══════════════════════════════════════════════════════════════ */
@@ -158,28 +158,75 @@
     }
 
 
-    // ─── BOOKING FORM HANDLER ───────────────────────────
+    // ─── REAL FORM SUBMISSION HANDLER (INSTRUCTION #9) ───
     function initBookingForm() {
-        const form = document.getElementById('booking-form');
-        const successMessage = document.getElementById('booking-success');
+        const forms = document.querySelectorAll('form[action*="formsubmit.co"]');
+        if (!forms.length) return;
 
-        if (!form || !successMessage) return;
+        forms.forEach(form => {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
 
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Show loading state
-            const submitBtn = form.querySelector('.booking__form-submit');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.7';
-            submitBtn.innerHTML = 'Requesting...';
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
 
-            // Simulate server request delay
-            setTimeout(() => {
-                form.style.display = 'none';
-                successMessage.style.display = 'flex';
-            }, 1200);
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.style.opacity = '0.75';
+                    submitBtn.innerHTML = 'Sending securely...';
+                }
+
+                const prevAlert = form.parentNode.querySelector('.form-submission-alert');
+                if (prevAlert) prevAlert.remove();
+
+                const formData = new FormData(form);
+                let endpoint = form.getAttribute('action') || 'https://formsubmit.co/info@croftondentalcenter.com';
+                if (!endpoint.includes('/ajax/')) {
+                    endpoint = endpoint.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+                }
+
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        form.reset();
+                        const existingSuccess = form.parentNode.querySelector('.booking__success-message');
+                        if (existingSuccess) {
+                            form.style.display = 'none';
+                            existingSuccess.style.display = 'flex';
+                        } else {
+                            const successDiv = document.createElement('div');
+                            successDiv.className = 'form-submission-alert form-submission-alert--success';
+                            successDiv.innerHTML = `<h4>Request Submitted Successfully!</h4><p>Thank you for reaching out to Crofton Dental Center. Our team has received your submission and will get in touch with you shortly.</p>`;
+                            form.parentNode.insertBefore(successDiv, form.nextSibling);
+                            form.style.display = 'none';
+                        }
+                    } else {
+                        throw new Error('Form submission failed with status ' + response.status);
+                    }
+                } catch (err) {
+                    console.error('Submission error:', err);
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'form-submission-alert form-submission-alert--error';
+                    errorDiv.innerHTML = `<h4>Unable to Send Submission</h4><p>We encountered a connection issue. Please give our office a call at <a href="tel:+13012613800" style="text-decoration:underline; font-weight:600;">(301) 261-3800</a> so we can assist you directly.</p>`;
+                    form.parentNode.insertBefore(errorDiv, form);
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '1';
+                        submitBtn.innerHTML = originalBtnHtml;
+                    }
+                }
+            });
         });
     }
 
@@ -281,7 +328,7 @@
     // ──────────────────────────────────────────
     updateHeader();
     initSmileSliders();
-    // initBookingForm(); // Disabled to allow native FormSubmit.co submission
+    initBookingForm();
     initHeroAudio();
     initFAQ();
     initLightbox();
