@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -140,143 +140,17 @@
 
         <section class="booking" style="padding-top: 60px; padding-bottom: 100px;">
             <div class="container">
-                <div class="booking__inner" data-reveal>
+                <div class="booking__inner" data-reveal style="display: block;">
                     <div class="booking__content">
-                        <span class="section-label">Appointment Form</span>
-                        <h2 class="booking__heading">Request An <em>Appointment.</em></h2>
-                        <p class="booking__text">
-                            Whether you are visiting for routine dental care, cosmetic enhancements, or restorative treatment, we are delighted to welcome you. Fill out the form below and our team will get in touch shortly to confirm your appointment time.
-                        </p>
+
                         
                         <!-- APPOINTMENT FORM ONLY (CLIENT INSTRUCTION #6) -->
-                        <form id="appointment-booking-form" action="https://formsubmit.co/info@croftondentalcenter.com" method="POST" class="booking__form">
-                            <!-- Form Configuration -->
-                            <input type="hidden" name="_subject" value="Appointment Booking Request - Crofton Dental Center">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
+                        <div data-reveal data-delay="300" style="min-height: 500px; margin-top: -1rem;">
+                            <div class="formaloo--root-container" data-form-slug="jGcOQrxC" data-transparent-background="false" data-hide-title="false" data-hide-cover-and-logo="false" data-fill-container-width="true" data-auto-height="false" data-skip-welcome-page="false"></div>
+                            <script src="https://embed.formaloo.me/v1/main.js" defer></script>
+                        </div>
+                    </div>
 
-                            <div class="booking__form-grid">
-                                <div class="booking__form-group">
-                                    <label for="app-name" class="booking__form-label">Full Name *</label>
-                                    <input type="text" name="name" id="app-name" class="booking__form-input" required placeholder="Alexander Mercer">
-                                </div>
-                                <div class="booking__form-group">
-                                    <label for="app-phone" class="booking__form-label">Phone Number *</label>
-                                    <input type="tel" name="phone" id="app-phone" class="booking__form-input" required placeholder="(301) 261-3800">
-                                </div>
-                                <div class="booking__form-group">
-                                    <label for="app-email" class="booking__form-label">Email Address *</label>
-                                    <input type="email" name="email" id="app-email" class="booking__form-input" required placeholder="alex@example.com">
-                                </div>
-                                <div class="booking__form-group">
-                                    <label for="app-service" class="booking__form-label">Desired Care *</label>
-                                    <div class="booking__form-select-wrapper">
-                                        <select name="service" id="app-service" class="booking__form-input booking__form-select" required>
-                                            <option value="" disabled selected>Select care needed</option>
-                                            <optgroup label="General Dentistry">
-                                                <option value="Dental Cleanings and Exams">Dental Cleanings and Exams</option>
-                                                <option value="Periodontal Cleanings">Periodontal Cleanings</option>
-                                                <option value="X-rays">X-rays</option>
-                                                <option value="Nightguards">Nightguards</option>
-                                                <option value="TMJ Treatment">TMJ Treatment</option>
-                                            </optgroup>
-                                            <optgroup label="Restorative Dentistry">
-                                                <option value="Implants">Implants</option>
-                                                <option value="Extractions">Extractions</option>
-                                                <option value="Fillings">Fillings</option>
-                                                <option value="Crowns">Crowns</option>
-                                                <option value="Bridges">Bridges</option>
-                                                <option value="Dentures">Dentures</option>
-                                            </optgroup>
-                                            <optgroup label="Orthodontics">
-                                                <option value="Invisalign">Invisalign</option>
-                                            </optgroup>
-                                            <optgroup label="Cosmetic Dentistry">
-                                                <option value="Whitening">Whitening</option>
-                                                <option value="Botox">Botox®</option>
-                                                <option value="Veneers">Veneers</option>
-                                            </optgroup>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="booking__form-group">
-                                    <label for="app-date" class="booking__form-label">Preferred Date *</label>
-                                    <input type="date" name="preferred_date" id="app-date" class="booking__form-input" required>
-                                </div>
-                                <div class="booking__form-group">
-                                    <label for="app-time" class="booking__form-label">Preferred Time of Day</label>
-                                    <div class="booking__form-select-wrapper">
-                                        <select name="preferred_time" id="app-time" class="booking__form-input booking__form-select">
-                                            <option value="Any Time" selected>Any Time</option>
-                                            <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
-                                            <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1:00 PM - 5:00 PM)</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="booking__form-group">
-                                    <label for="app-status" class="booking__form-label">Patient Status</label>
-                                    <div class="booking__form-select-wrapper">
-                                        <select name="patient_status" id="app-status" class="booking__form-input booking__form-select">
-                                            <option value="New Patient" selected>New Patient</option>
-                                            <option value="Existing Patient">Existing Patient</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="booking__form-group">
-                                    <label for="app-insurance" class="booking__form-label">Dental Insurance (Optional)</label>
-                                    <input type="text" name="insurance" id="app-insurance" class="booking__form-input" placeholder="e.g. Delta Dental, Cigna, MetLife...">
-                                </div>
-                                <div class="booking__form-group" style="grid-column: 1 / -1;">
-                                    <label for="app-notes" class="booking__form-label">Notes or Accommodations</label>
-                                    <textarea name="notes" id="app-notes" class="booking__form-input" rows="4" placeholder="Any specific concerns, comfort requests, or accommodations we should know about?"></textarea>
-                                </div>
-                            </div>
-                            <div class="booking__form-submit-row" style="margin-top: 2rem;">
-                                <button type="submit" class="btn btn--primary booking__form-submit">
-                                    Request Appointment
-                                    <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                </button>
-                            </div>
-                        </form>
-                        <div id="booking-success" class="booking__success-message" style="display: none;">
-                            <svg class="booking__success-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
-                            <div>
-                                <h4>Appointment Request Received</h4>
-                                <p>Thank you. Our care concierge will review your requested time and reach out within 24 hours to finalize your suite reservation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="booking__details" data-reveal data-delay="200">
-                        <div class="booking__detail">
-                            <h4 class="booking__detail-title">Location</h4>
-                            <p class="booking__detail-text">1664 Village GRN<br>Crofton, MD 21114</p>
-                        </div>
-                        <div class="booking__detail">
-                            <h4 class="booking__detail-title">Hours</h4>
-                            <p class="booking__detail-text">
-                                Monday: Closed<br>
-                                Tuesday: 9:00 AM – 5:00 PM<br>
-                                Wednesday: 9:00 AM – 5:00 PM<br>
-                                Thursday: Closed<br>
-                                Friday: 9:00 AM – 5:00 PM<br>
-                                Saturday: 8:00 AM – 2:00 PM (Open on the first Saturday of every month only)<br>
-                                Sunday: Closed
-                            </p>
-                        </div>
-                        <div class="booking__detail">
-                            <h4 class="booking__detail-title">Contact</h4>
-                            <p class="booking__detail-text">
-                                Phone: <a href="tel:+13012613800">(301) 261-3800</a><br>
-                                Fax: <a href="tel:+13019361633">1 (301) 936-1633</a><br>
-                                Email: <a href="mailto:info@croftondentalcenter.com">info@croftondentalcenter.com</a>
-                            </p>
-                        </div>
-                        
-                        <div class="map-container" style="margin-top: 2rem; border-radius: 12px; overflow: hidden; height: 250px; background: #e0e0e0;">
-                            <iframe src="https://maps.google.com/maps?q=1664%20Village%20GRN%20Crofton,%20MD%2021114&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
