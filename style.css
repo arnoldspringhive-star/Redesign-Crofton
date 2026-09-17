@@ -389,6 +389,7 @@ button {
 /* Mobile Toggle */
 .header__menu-toggle {
     display: flex;
+    margin-left: auto;
     flex-direction: column;
     gap: 5px;
     padding: 8px;
@@ -445,6 +446,7 @@ button {
     z-index: 999;
     background: var(--color-linen);
     display: flex;
+    margin-left: auto;
     align-items: flex-start;
     justify-content: flex-end;
     overflow-y: auto;
@@ -3782,5 +3784,21 @@ select:focus-visible {
     }
     .header__nav {
         flex: none;
+    }
+}
+
+.header__laptop-cta {
+    display: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+    .header__laptop-cta {
+        display: inline-flex;
+        margin-left: 1.5rem;
     }
 }
