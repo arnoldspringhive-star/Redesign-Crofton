@@ -3802,3 +3802,17 @@ select:focus-visible {
         margin-left: 1.5rem;
     }
 }
+
+@media (max-width: 1439px) {
+    .hero--services .page-title {
+        white-space: normal !important;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .laptop-inline {
+        white-space: nowrap;
+    }
+}
+
