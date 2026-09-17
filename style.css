@@ -3774,3 +3774,13 @@ select:focus-visible {
 
 
 
+
+@media (min-width: 1440px) {
+    .header__inner {
+        justify-content: flex-end;
+        gap: 4rem;
+    }
+    .header__nav {
+        flex: none;
+    }
+}
