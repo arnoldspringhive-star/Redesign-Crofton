@@ -3818,9 +3818,19 @@ select:focus-visible {
 
 
 /* Fix gap above Our Pillars on Crofton Experience page */
+.pillars-padding-fix {
+    padding-top: 50px !important; /* Mobile & Tablet */
+}
+
 @media (min-width: 992px) {
     .pillars-padding-fix {
-        padding-top: 50px !important;
+        padding-top: 70px !important; /* Laptop */
+    }
+}
+
+@media (min-width: 1200px) {
+    .pillars-padding-fix {
+        padding-top: 100px !important; /* Desktop */
     }
 }
 
