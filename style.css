@@ -2514,6 +2514,18 @@ select:focus-visible {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    object-fit: cover;
+    height: 300px; /* Mobile */
+}
+@media (min-width: 768px) {
+    .service-detail-block__img img {
+        height: 500px; /* Tablet */
+    }
+}
+@media (min-width: 992px) {
+    .service-detail-block__img img {
+        height: 500px; /* Laptop & Desktop */
+    }
 }
 
 /* Patient Guide & Sidebar */
@@ -3835,16 +3847,5 @@ select:focus-visible {
 }
 
 
-/* Custom height for experience intro image */
-.experience-intro-img {
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
-}
 
-@media (min-width: 768px) {
-    .experience-intro-img {
-        height: 500px;
-    }
-}
 
