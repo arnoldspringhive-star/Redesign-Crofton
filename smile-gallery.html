@@ -17,9 +17,14 @@
     <style>
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr;
             gap: var(--space-xl);
             margin-top: 4rem;
+        }
+        @media (min-width: 1200px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         .gallery-item {
             background: var(--color-white);
