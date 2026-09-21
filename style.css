@@ -3834,3 +3834,17 @@ select:focus-visible {
     }
 }
 
+
+/* Custom height for experience intro image */
+.experience-intro-img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .experience-intro-img {
+        height: 500px;
+    }
+}
+
