@@ -2206,14 +2206,7 @@ button {
     margin-bottom: 3.5rem;
 }
 
-@media (max-width: 1199px) and (min-width: 769px) {
-    .footer__grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3.5rem 3rem;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
     .footer__grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
@@ -2347,7 +2340,7 @@ button {
     color: #2D3D3A;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1199px) {
     .footer__services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
