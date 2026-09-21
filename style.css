@@ -3816,3 +3816,11 @@ select:focus-visible {
     }
 }
 
+
+/* Fix gap above Our Pillars on Crofton Experience page */
+@media (min-width: 992px) {
+    .pillars-padding-fix {
+        padding-top: 50px !important;
+    }
+}
+
